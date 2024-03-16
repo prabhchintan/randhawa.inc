@@ -37,11 +37,12 @@
         }
         
         .footer {
-            position: absolute;
+            position: fixed;
             bottom: 20px;
             right: 20px;
             color: #fff;
             text-align: right;
+            z-index: 1;
         }
         
         .footer a {
@@ -51,6 +52,11 @@
         }
         
         @media screen and (max-width: 768px) {
+            .footer {
+                bottom: 10px;
+                right: 10px;
+            }
+            
             .footer a {
                 font-size: 18px;
             }
@@ -60,9 +66,9 @@
 <body>
     <div class="container">
         <div class="image"></div>
-        <div class="footer">
-            <a href="mailto:prab@hey.com">Contact</a>
-        </div>
+    </div>
+    <div class="footer">
+        <a href="mailto:prab@hey.com">Contact</a>
     </div>
 
     <script>
